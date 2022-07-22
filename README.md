@@ -42,6 +42,6 @@ This is extracting Reddit data. Specifically, it's taking the top posts of the d
 
 This is uploading the newly created CSV to AWS S3 for storage within the bucket Terraform created.
 
-`copy_to_redshift
+`copy_to_redshift`
 
 This is creating a table in Redshift if it doesn't already exist. It's then using the COPY command to copy data from the newly uploaded CSV file in S3 to Redshift. This is designed to avoid duplicate data based on post id. If the same post id is in a later DAG run load, then warehouse will be updated with that record. Read here for information on the COPY command.
