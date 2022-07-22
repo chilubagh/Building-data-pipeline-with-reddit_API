@@ -24,3 +24,6 @@ Second, we will connect a BI tool to our warehouse and create some looking visua
 ## Docker & Airflow
 
 The pipeline is scheduled daily.Each day, we'll extract the top Reddit posts for r/DataEngineering. Because LIMIT is set to None in the Reddit extraction script, it should in theory return all posts from the past 24 hours.
+
+we navigate to http://localhost:8080 to access the Airflow Web Interface. This is running within one of the Docker containers, which is mapping onto our local machine. If nothing shows up, give it a few minutes more. Password and username are both airflow. 
+The dag `etl_reddit_pipeline` should be set to start running automatically once the containers are created. It may have already finished by the time you login. This option is set within the docker-compose file. The next DAG run will be at midnight. If you click on the DAG and look under the Tree view, all boxes should be dark green if the DAG run was successful. 
