@@ -27,3 +27,21 @@ The pipeline is scheduled daily.Each day, we'll extract the top Reddit posts for
 
 we navigate to http://localhost:8080 to access the Airflow Web Interface. This is running within one of the Docker containers, which is mapping onto our local machine. If nothing shows up, give it a few minutes more. Password and username are both airflow. 
 The dag `etl_reddit_pipeline` should be set to start running automatically once the containers are created. It may have already finished by the time you login. This option is set within the docker-compose file. The next DAG run will be at midnight. If you click on the DAG and look under the Tree view, all boxes should be dark green if the DAG run was successful. 
+
+If you check in the airflow/dags folder, you'll find a file titled `elt_pipeline.py`. This is our DAG which you saw in Airflow's UI.
+
+It's a very simple DAG. All it's doing is running 3 tasks, one after the other. This DAG will run everyday at midnight. It will also run once as soon as you create the Docker containers. These tasks are using BashOperator, meaning that they are running a bash command. The tasks here are running a bash command to call external Python scripts (these Python scripts also exist within our docker container through the use of volumes). You'll find them under the extraction folder.
+
+Read below for more details:
+
+`extract_reddit_data_task`
+
+This is extracting Reddit data. Specifically, it's taking the top posts of the day from r/DataEngineering and collecting a few different attributes, like the number of comments. It's then saving this to a CSV within the /tmp folder.
+
+`upload_to_s3`
+
+This is uploading the newly created CSV to AWS S3 for storage within the bucket Terraform created.
+
+`copy_to_redshift
+
+This is creating a table in Redshift if it doesn't already exist. It's then using the COPY command to copy data from the newly uploaded CSV file in S3 to Redshift. This is designed to avoid duplicate data based on post id. If the same post id is in a later DAG run load, then warehouse will be updated with that record. Read here for information on the COPY command.
