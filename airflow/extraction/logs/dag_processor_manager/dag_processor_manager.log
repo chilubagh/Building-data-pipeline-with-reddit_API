@@ -3,3 +3,215 @@
 [2022-07-22 21:11:38,257] {manager.py:483} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
 [2022-07-22 21:11:38,260] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
 [2022-07-22 21:11:38,268] {manager.py:693} INFO - There are 0 files in /opt/airflow/dags
+[2022-07-22 21:16:38,982] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:16:39,012] {manager.py:693} INFO - There are 0 files in /opt/airflow/dags
+[2022-07-22 21:21:39,718] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:21:39,912] {manager.py:693} INFO - There are 0 files in /opt/airflow/dags
+[2022-07-22 21:26:39,978] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:26:40,167] {manager.py:693} INFO - There are 0 files in /opt/airflow/dags
+[2022-07-22 21:31:42,728] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:31:44,881] {manager.py:693} INFO - There are 1 files in /opt/airflow/dags
+[2022-07-22 21:31:46,124] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/etl_pipeline.py    695  0.64s             0           0
+================================================================================
+[2022-07-22 21:32:20,405] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    707  1.10s             0           0  2.29s           2022-07-22T21:31:47
+================================================================================
+[2022-07-22 21:32:51,878] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  9.64s           2022-07-22T21:32:28
+================================================================================
+[2022-07-22 21:33:21,797] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    723  20.57s            0           0  9.64s           2022-07-22T21:32:28
+================================================================================
+[2022-07-22 21:34:25,296] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    727  13.17s            0           0  21.68s          2022-07-22T21:33:22
+================================================================================
+[2022-07-22 21:34:55,752] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:35:39,589] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    728  18.00s            0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:36:47,986] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    728  90.44s            0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:38:22,444] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:38:28,910] {manager.py:693} INFO - There are 1 files in /opt/airflow/dags
+[2022-07-22 21:38:29,424] {manager.py:1082} ERROR - Processor for /opt/airflow/dags/etl_pipeline.py with PID 728 started at 2022-07-22T21:35:17.325186+00:00 has timed out, killing it.
+[2022-07-22 21:38:35,695] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    736  4.16s             0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:39:06,144] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    736  34.91s            0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:39:43,204] {manager.py:1082} ERROR - Processor for /opt/airflow/dags/etl_pipeline.py with PID 736 started at 2022-07-22T21:38:30.822605+00:00 has timed out, killing it.
+[2022-07-22 21:39:57,726] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    738  8.84s             0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:41:05,780] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    738  55.04s            0           0  26.96s          2022-07-22T21:34:37
+================================================================================
+[2022-07-22 21:46:38,476] {manager.py:480} INFO - Processing files using up to 2 processes at a time 
+[2022-07-22 21:46:38,609] {manager.py:481} INFO - Process each file at most once every 30 seconds
+[2022-07-22 21:46:38,656] {manager.py:483} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2022-07-22 21:46:38,689] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:46:39,276] {manager.py:693} INFO - There are 1 files in /opt/airflow/dags
+[2022-07-22 21:46:44,387] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/etl_pipeline.py    751  1.43s             0           0
+================================================================================
+[2022-07-22 21:47:14,642] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  5.70s           2022-07-22T21:46:47
+================================================================================
+[2022-07-22 21:47:48,714] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  3.67s           2022-07-22T21:47:21
+================================================================================
+[2022-07-22 21:48:19,760] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    795  24.43s            0           0  3.67s           2022-07-22T21:47:21
+================================================================================
+[2022-07-22 21:48:50,776] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  47.44s          2022-07-22T21:48:42
+================================================================================
+[2022-07-22 21:49:22,330] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  8.31s           2022-07-22T21:49:09
+================================================================================
+[2022-07-22 21:49:55,810] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    820  13.04s            0           0  8.31s           2022-07-22T21:49:09
+================================================================================
+[2022-07-22 21:50:48,398] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  46.02s          2022-07-22T21:50:26
+================================================================================
+[2022-07-22 21:51:19,474] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  4.69s           2022-07-22T21:51:01
+================================================================================
+[2022-07-22 21:51:38,901] {manager.py:690} INFO - Searching for files in /opt/airflow/dags
+[2022-07-22 21:51:43,380] {manager.py:693} INFO - There are 1 files in /opt/airflow/dags
+[2022-07-22 21:52:38,470] {manager.py:1082} ERROR - Processor for /opt/airflow/dags/etl_pipeline.py with PID 830 started at 2022-07-22T21:51:31.826975+00:00 has timed out, killing it.
+[2022-07-22 21:52:40,863] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                            PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py    832  0.38s             0           0  4.69s           2022-07-22T21:51:01
+================================================================================
+[2022-07-22 21:53:11,637] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  4.90s           2022-07-22T21:52:45
+================================================================================
+[2022-07-22 21:53:41,876] {manager.py:809} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                          PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/etl_pipeline.py                           0           0  5.63s           2022-07-22T21:53:21
+================================================================================
