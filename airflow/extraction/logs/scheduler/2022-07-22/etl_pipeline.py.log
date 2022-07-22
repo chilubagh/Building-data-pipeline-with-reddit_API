@@ -1,0 +1,53 @@
+[2022-07-22 21:31:46,381] {processor.py:153} INFO - Started process (PID=695) to work on /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:31:46,406] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2022-07-22 21:31:46,436] {logging_mixin.py:115} INFO - [2022-07-22 21:31:46,435] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:31:47,138] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:31:47,295] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 0.988 seconds
+[2022-07-22 21:32:23,497] {processor.py:153} INFO - Started process (PID=707) to work on /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:32:23,515] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2022-07-22 21:32:23,526] {logging_mixin.py:115} INFO - [2022-07-22 21:32:23,526] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:32:24,318] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:32:27,153] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 3.832 seconds
+[2022-07-22 21:33:18,401] {processor.py:153} INFO - Started process (PID=723) to work on /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:33:18,409] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2022-07-22 21:33:18,418] {logging_mixin.py:115} INFO - [2022-07-22 21:33:18,413] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:33:18,538] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:33:21,112] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 2.900 seconds
+[2022-07-22 21:34:26,504] {processor.py:153} INFO - Started process (PID=727) to work on /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:34:26,622] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2022-07-22 21:34:26,627] {logging_mixin.py:115} INFO - [2022-07-22 21:34:26,627] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:34:27,713] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:34:36,730] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_pipeline.py took 11.360 seconds
+[2022-07-22 21:36:40,897] {processor.py:153} INFO - Started process (PID=728) to work on /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:36:41,094] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2022-07-22 21:36:42,443] {logging_mixin.py:115} INFO - [2022-07-22 21:36:42,084] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:37:40,729] {logging_mixin.py:115} INFO - [2022-07-22 21:37:40,694] {timeout.py:67} ERROR - Process timed out, PID: 728
+[2022-07-22 21:37:40,972] {logging_mixin.py:115} INFO - [2022-07-22 21:37:40,739] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/etl_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_pipeline.py", line 3, in <module>
+    from airflow.operators.bash_operator import BashOperator
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash_operator.py", line 22, in <module>
+    from airflow.operators.bash import BashOperator  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 29, in <module>
+    class BashOperator(BaseOperator):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 416, in __new__
+    new_cls.__init__ = cls._apply_defaults(new_cls.__init__)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 310, in _apply_defaults
+    sig_cache = signature(func)
+  File "/usr/local/lib/python3.7/inspect.py", line 3081, in signature
+    def signature(obj, *, follow_wrapped=True):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 68, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/etl_pipeline.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.3.2/best-practices.html#reducing-dag-complexity, PID: 728
+[2022-07-22 21:37:41,034] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:38:39,060] {processor.py:153} INFO - Started process (PID=736) to work on /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:38:39,917] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_pipeline.py for tasks to queue
+[2022-07-22 21:38:39,930] {logging_mixin.py:115} INFO - [2022-07-22 21:38:39,930] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py
+[2022-07-22 21:38:43,635] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_pipeline.py
