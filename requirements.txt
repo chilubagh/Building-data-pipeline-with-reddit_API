@@ -1,1 +1,4 @@
 pytest 
+praw 
+boto3
+psycopg2
