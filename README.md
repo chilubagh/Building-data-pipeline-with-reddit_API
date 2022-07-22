@@ -23,4 +23,4 @@ Second, we will connect a BI tool to our warehouse and create some looking visua
 
 ## Docker & Airflow
 
-We're going to run our pipeline daily, for demonstration purposes, although this could be changed at a later point. Each day, we'll extract the top Reddit posts for r/DataEngineering. Because LIMIT is set to None in the Reddit extraction script, it should in theory return all posts from the past 24 hours.
+The pipeline is scheduled daily.Each day, we'll extract the top Reddit posts for r/DataEngineering. Because LIMIT is set to None in the Reddit extraction script, it should in theory return all posts from the past 24 hours.
