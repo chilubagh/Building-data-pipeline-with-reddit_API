@@ -32,6 +32,10 @@ If you check in the airflow/dags folder, you'll find a file titled `elt_pipeline
 
 It's a very simple DAG. All it's doing is running 3 tasks, one after the other. This DAG will run everyday at midnight. It will also run once as soon as you create the Docker containers. These tasks are using BashOperator, meaning that they are running a bash command. The tasks here are running a bash command to call external Python scripts (these Python scripts also exist within our docker container through the use of volumes). You'll find them under the extraction folder.
 
+<img width="1309" alt="reddit-airflow" src="https://user-images.githubusercontent.com/51442225/180582035-eb0ae186-c965-488e-9056-d6f5d955df5f.png">
+
+
+
 ## How it works
 
 `extract_reddit_data_task`
