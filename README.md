@@ -65,7 +65,10 @@ This is creating a table in Redshift if it doesn't already exist. It's then usin
 
 <img width="1412" alt="redshift" src="https://user-images.githubusercontent.com/51442225/180582148-cb46d612-4cf7-4a57-9bcb-fbe628d5423d.png">
 
+## Termination
+I terminated my docker and airlow after 24 hours and also paused AWS Redshift since i didnt want to incur cost.
+The following commands were used
 
-<img width="1412" alt="redshift" src="https://user-images.githubusercontent.com/51442225/180582148-cb46d612-4cf7-4a57-9bcb-fbe628d5423d.png">
-
+1. Terminate AWS resources 
+   `terraform destroy`
 
