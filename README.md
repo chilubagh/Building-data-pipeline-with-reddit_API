@@ -67,6 +67,5 @@ This is creating a table in Redshift if it doesn't already exist. It's then usin
 
 
 <img width="1412" alt="redshift" src="https://user-images.githubusercontent.com/51442225/180582148-cb46d612-4cf7-4a57-9bcb-fbe628d5423d.png">
-<img width="1412" alt="redshift" src="https://user-images.githubusercontent.com/51442225/180582148-cb46d612-4cf7-4a57-9bcb-fbe628d5423d.png">
 
 
