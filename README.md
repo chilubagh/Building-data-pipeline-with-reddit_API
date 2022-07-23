@@ -84,6 +84,14 @@ To remove all stopped containers,images and all dagling build cache.
 ## Improvements
 This projects needs constant improvements as I am still on a learning journey.In summary the follwing improvements would be made
 
-# Notifications
+## Notifications
 
 I noticed airflow can be used to send emails when failure happens.I would also simplify or refactor with a production environment in mind.
+
+## Testing
+
+I need to implement better validation checks to make sure duplicate data is removed.
+
+## Simplify Process
+
+The use of Airflow overkill. Alternative ways to run this pipeline could be with Cron for orchestration and PostgreSQL or SQLite for storage.I would look for performance improvements, reduce code redundancy, and implement software engineering best practices. For example, considering  using Parquet file format over CSV, or consider whether warehouse data could be modeled as a star schema.
