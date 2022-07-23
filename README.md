@@ -2,15 +2,25 @@
 
 A data pipeline to extract Reddit data from subreddit r/dataengineering.
 
-Technologies Used
-. AWS S3 (https://aws.amazon.com/s3/)
 ## Motivation
 
 This is a personal project based on an interest in Data Engineering and the types of post found on the official subreddit, https://www.reddit.com/r/dataengineering/ It also provided a good opportunity to develop skills and experience in a range of tools. As such, project is more complex than required, utilising terraform,airflow, docker and cloud based technologies like redshift,S3 etc.
 
+Technologies Used
 
-## Architecture
-=======
+. AWS S3 (https://aws.amazon.com/s3/)
+
+. AWS Redshift (https://aws.amazon.com/redshift/)
+
+. AWS IAM (https://aws.amazon.com/iam/)
+
+. Terraform (https://www.terraform.io/)
+
+. Docker (https://www.docker.com/)
+
+. Airflow (https://airflow.apache.org/)
+
+
 ## Summary of Project
 Essentially there is one pipeline which extracts Reddit data from its API using Python's PRAW API wrapper.It is setup to extract data from the past 24 hours and store in a CSV with fields such as post ID, author name, etc.This CSV is then loaded directly into an AWS S3 bucket (cloud storage), before being copied to AWS Redshift (cloud data warehouse).This entire process is running with Apache Airflow (orchestration tool) running with Docker. This saves us having to manually setup Airflow.
 Another two components make up this project that are not controlled with Airflow.
