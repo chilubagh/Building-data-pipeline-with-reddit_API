@@ -71,4 +71,5 @@ The following commands were used
 
 1. Terminate AWS resources 
    `terraform destroy`
-
+2. Stop and delete containers, delete volumes with database data and download images. To do so, navigate to the airflow directory you first ran docker-compose up and run the following:
+`docker-compose down --volumes --rmi all`
