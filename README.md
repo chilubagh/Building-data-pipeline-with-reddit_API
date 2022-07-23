@@ -69,7 +69,13 @@ This is creating a table in Redshift if it doesn't already exist. It's then usin
 I terminated my docker and airlow after 24 hours and also paused AWS Redshift since i didnt want to incur cost.
 The following commands were used
 
-1. Terminate AWS resources 
+Terminate AWS resources 
+
    `terraform destroy`
-2. Stop and delete containers, delete volumes with database data and download images. To do so, navigate to the airflow directory you first ran docker-compose up and run the following:
+Stop and delete containers, delete volumes with database data and download images. To do so, navigate to the airflow directory you first ran docker-compose up and run the following:
+
 `docker-compose down --volumes --rmi all`
+
+To remove all stopped containers,images and all dagling build cache.
+
+`docker system prune`
