@@ -8,21 +8,22 @@ This is a personal project based on an interest in Data Engineering and the type
 
 Technologies Used
 
-. AWS S3 (https://aws.amazon.com/s3/)
+AWS S3 (https://aws.amazon.com/s3/)
 
-. AWS Redshift (https://aws.amazon.com/redshift/)
+AWS Redshift (https://aws.amazon.com/redshift/)
 
-. AWS IAM (https://aws.amazon.com/iam/)
+AWS IAM (https://aws.amazon.com/iam/)
 
-. Terraform (https://www.terraform.io/)
+Terraform (https://www.terraform.io/)
 
-. Docker (https://www.docker.com/)
+Docker (https://www.docker.com/)
 
-. Airflow (https://airflow.apache.org/)
+Airflow (https://airflow.apache.org/)
 
 
 ## Summary of Project
 Essentially there is one pipeline which extracts Reddit data from its API using Python's PRAW API wrapper.It is setup to extract data from the past 24 hours and store in a CSV with fields such as post ID, author name, etc.This CSV is then loaded directly into an AWS S3 bucket (cloud storage), before being copied to AWS Redshift (cloud data warehouse).This entire process is running with Apache Airflow (orchestration tool) running with Docker. This saves us having to manually setup Airflow.
+We use terraform(Infrastructure AS Code) to build the AWS services.
 Another two components make up this project that are not controlled with Airflow.
 First, we use dbt to connect to our data warehouse and transform the data. We're only really using dbt to gain some familiarity with it and build our skills.
 Second, we will connect a BI tool to our warehouse and create some looking visualisations.
