@@ -72,6 +72,7 @@ The following commands were used
 Terminate AWS resources 
 
    `terraform destroy`
+   
 Stop and delete containers, delete volumes with database data and download images. To do so, navigate to the airflow directory you first ran docker-compose up and run the following:
 
 `docker-compose down --volumes --rmi all`
@@ -79,3 +80,10 @@ Stop and delete containers, delete volumes with database data and download image
 To remove all stopped containers,images and all dagling build cache.
 
 `docker system prune`
+
+## Improvements
+This projects needs constant improvements as I am still on a learning journey.In summary the follwing improvements would be made
+
+# Notifications
+
+I noticed airflow can be used to send emails when failure happens.I would also simplify or refactor with a production environment in mind.
